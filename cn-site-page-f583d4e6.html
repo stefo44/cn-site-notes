@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JRS直播 · 产品说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f7f8fa;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      color: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 820px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+      padding: 3rem 2.5rem 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 2rem 1.25rem 3rem;
+        border-radius: 16px;
+      }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #0b0b1a;
+      margin-bottom: 0.25rem;
+      line-height: 1.2;
+    }
+
+    h1 small {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #6b7280;
+      letter-spacing: 0.03em;
+      margin-top: 0.3rem;
+    }
+
+    .lead {
+      font-size: 1.125rem;
+      color: #374151;
+      border-left: 4px solid #2563eb;
+      padding-left: 1.25rem;
+      margin: 1.5rem 0 2.2rem;
+      background: #f1f5f9;
+      border-radius: 0 12px 12px 0;
+      padding: 0.9rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 450;
+      margin: 2.2rem 0 0.75rem;
+      color: #111827;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.35rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin: 1.8rem 0 0.5rem;
+      color: #1e293b;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1.2rem 0 1rem;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.6rem;
+      margin-bottom: 0.6rem;
+      color: #334155;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0.4rem;
+      color: #2563eb;
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .scenario {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0 1.8rem;
+    }
+
+    .card {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 1.4rem 1.5rem;
+      flex: 1 1 220px;
+      border: 1px solid #eef2f6;
+      transition: all 0.1s ease;
+    }
+
+    .card:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+
+    .card h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+      color: #0f172a;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin: 0;
+      color: #475569;
+    }
+
+    .tip-box {
+      background: #f0f4fe;
+      border-radius: 16px;
+      padding: 1.4rem 1.75rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2563eb;
+    }
+
+    .faq-item {
+      margin: 1rem 0 1.5rem;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+    }
+
+    .faq-item p {
+      margin: 0.1rem 0 0;
+      color: #475569;
+    }
+
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #1d4ed8;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e9edf2;
+      margin: 2.5rem 0 1.8rem;
+    }
+
+    .footer-note {
+      font-size: 0.85rem;
+      color: #6b7280;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>
+      JRS直播
+      <small>一个关于赛事内容聚合与信息通道的产品说明</small>
+    </h1>
+
+    <p class="lead">
+      赛事直播的观看需求背后，是用户对即时信息、多源覆盖以及低延迟体验的综合期待。<strong>JRS直播</strong> 作为一项面向中文用户的赛事信息聚合服务，其核心定位并非简单的“播放器”，而是一个提供赛事导航与内容索引的开放工具。
+    </p>
+
+    <h2>平台摘要 · 信息整合逻辑</h2>
+    <p>
+      从产品视角看，<a href="https://cn-site-jrs.com">JRS直播</a> 所做的事接近于“内容信源整理”。它汇总来自多个公开渠道的赛程、实时比分、视频流入口以及社区讨论片段，并以统一的界面呈现。用户不需要在多个站点之间来回跳转，就能在同一页面内获取到与赛事相关的多维度信息。这种模式本质上是信息聚合层，而非内容生产方。
+    </p>
+    <p>
+      因此，理解 JRS直播 的关键在于：它是一个连接器，将分散在互联网各处的赛事资源做了结构化重组。对于日常关注足球、篮球、网球及其他主流运动的用户而言，这种聚合能显著降低信息获取成本。
+    </p>
+
+    <h2>产品亮点 · 克制而实用</h2>
+    <ul>
+      <li><strong>多源覆盖</strong> —— 整合来自不同转播信号、文字直播及数据统计的来源，用户可依据自身网络状况选择较稳定的路径。</li>
+      <li><strong>低信息噪音</strong> —— 界面专注于赛事本身，弱化非相关内容，减少干扰项。</li>
+      <li><strong>实时更新机制</strong> —— 赛程与比分变动以接近实时的方式刷新，不需要手动反复刷新页面。</li>
+      <li><strong>无障碍访问</strong> —— 无需注册或安装额外软件，通过浏览器即可进入聚合页面。</li>
+    </ul>
+
+    <h3>典型使用场景</h3>
+    <div class="scenario">
+      <div class="card">
+        <h4>⏱ 多场赛事并行</h4>
+        <p>当同时进行多场焦点比赛时，JRS直播 提供并排信息卡片，方便快速切换关注点。</p>
+      </div>
+      <div class="card">
+        <h4>📱 移动端轻量浏览</h4>
+        <p>优化后的移动布局适合在通勤、户外等场景下快速查看赛况与直播入口。</p>
+      </div>
+      <div class="card">
+        <h4>🔍 赛前信息预习</h4>
+        <p>通过聚合的赛程预告与对阵信息，提前了解比赛时间及潜在看点。</p>
+      </div>
+    </div>
+
+    <h2>使用建议 · 让信息流更顺畅</h2>
+    <p>
+      为了获得相对稳定的体验，建议在使用 <a href="https://cn-site-jrs.com">JRS直播</a> 时注意以下几点：首先，由于聚合的源来自不同服务器，部分链接可能在个别网络环境下加载较慢，可尝试更换信源；其次，页面内的直播入口多为第三方渠道，请自行判断其安全性与合规性；最后，建议将页面添加至浏览器书签，以便日常快速访问。
+    </p>
+
+    <div class="tip-box">
+      <strong>📌 访问提示</strong>
+      <p style="margin-top: 0.3rem;">
+        JRS直播 本身不存储任何受版权保护的视频文件，所有内容均指向外部公开资源。请在使用时遵守所在地区关于网络信息传播的相关法律法规。平台不对第三方链接的内容及稳定性承担责任。
+      </p>
+    </div>
+
+    <h2>FAQ 摘要 · 常见疑问</h2>
+    <div class="faq-item">
+      <strong>Q：JRS直播 是否需要付费？</strong>
+      <p>完全免费。所有聚合功能及信息展示均不收取任何费用。</p>
+    </div>
+    <div class="faq-item">
+      <strong>Q：页面中的直播源为何有时无法播放？</strong>
+      <p>原因可能包括：源站服务器限流、地域网络限制、或赛事转播权变更。可尝试切换其他可用源，或等待一段时间后重试。</p>
+    </div>
+    <div class="faq-item">
+      <strong>Q：是否提供回放或录像功能？</strong>
+      <p>JRS直播 主要聚焦于实时赛事信息，不提供录像存储。部分第三方源可能附带回放，但不在平台保证范围内。</p>
+    </div>
+
+    <hr>
+    <p class="footer-note">
+      JRS直播 · 赛事信息聚合通道 &nbsp;|&nbsp; 产品说明页面 &nbsp;|&nbsp; 内容仅供参考
+    </p>
+  </div>
+</body>
+</html>
